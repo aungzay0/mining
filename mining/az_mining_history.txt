@@ -1,0 +1,859 @@
+    1  cd Downloads/
+    2  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    3  echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+    4  sudo apt-get update 
+    5  sudo apt-get install google-chrome-stable
+    6  glxinfo
+    7  sudo lshw -C display
+    8  sudo apt-get install software-properties-common
+    9  sudo add-apt-repository ppa:ethereum/ethereum
+   10  sudo sed 's/jessie/vivid/' -i /etc/apt/sources.list.d/ethereum-ethereum-*.list
+   11  sudo apt-get update
+   12  sudo apt-get install ethereum ethminer
+   13  geth account new
+   14  sudo apt-get install linux-headers-amd64 build-essential
+   15  wget https://us.download.nvidia.com/XFree86/Linux-x86_64/384.90/NVIDIA-Linux-x86_64-384.90.run
+   16  chmod +x NVIDIA-Linux-x86_64-384.90.run
+   17  sudo ./NVIDIA-Linux-x86_64-384.90.run
+   18  sudo init 3
+   19  sudo init 1
+   20  init 2
+   21  sudo init 2
+   22  sudo ./NVIDIA-Linux-x86_64-384.90.run
+   23  /var/log/installer/
+   24  ls /var/log/installer/
+   25  sudo ./NVIDIA-Linux-x86_64-384.90.run
+   26  pwd
+   27  sudo init 1
+   28  cd Downloads/
+   29  ls -ltr
+   30  chmod +x NVIDIA-Linux-x86_64-384.98.run 
+   31  sudo ./NVIDIA-Linux-x86_64-384.98.run 
+   32  init 1
+   33  sudo init 1
+   34  ls -ltr
+   35  setx GPU_FORCE_64BIT_PTR 0
+   36  setx GPU_MAX_HEAP_SIZE 100
+   37  setx GPU_USE_SYNC_OBJECTS 1
+   38  setx GPU_MAX_ALLOC_PERCENT 100
+   39  setx GPU_SINGLE_ALLOC_PERCENT 100
+   40  ethminer --farm-recheck 200 -G -S eu1.ethermine.org:4444 -FS us1.ethermine.org:4444 -O 0x9ABc96207845Fa3D39812A171683F33040C695ed.aungzay_rig1
+   41  ethminer --help
+   42  ethminer -V
+   43  wget https://github.com/ethereum-mining/ethminer/releases/download/v0.12.0/ethminer-0.12.0-Linux.tar.gz
+   44  ls -ltr
+   45  tar xvzf ethminer-0.12.0-Linux.tar.gz 
+   46  cd bin/
+   47  ./ethminer --farm-recheck 200 -G -S eu1.ethermine.org:4444 -FS us1.ethermine.org:4444 -O 0x9ABc96207845Fa3D39812A171683F33040C695ed.aungzay_rig1
+   48  echo "./ethminer --farm-recheck 200 -G -S eu1.ethermine.org:4444 -FS us1.ethermine.org:4444 -O 0x9ABc96207845Fa3D39812A171683F33040C695ed.aungzay_rig1" > testrun.sh
+   49  ping
+   50  ping google.com
+   51  ethminer
+   52  ethminer
+   53  ping google.com
+   54  ipconfig
+   55  ipconfig -a
+   56  ifconfig -a
+   57  sudo apt-get install sshd
+   58  sudo apt-get install openssh-server
+   59  sudo systemctl restart sshd.service
+   60  ps -ef | egrep sshd
+   61  cd bin/
+   62  ls 
+   63  sh testrun.sh 
+   64  init 0
+   65  cd Downloads/
+   66  wget https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-16.40-348864.tar.xz
+   67  history | grep tar
+   68  ls
+   69  tar xvzf  amdgpu-pro-16.40-348864.tar.xz 
+   70  wget https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-16.40-348864.tar.xz
+   71  ls -ltr 
+   72  cat amdgpu-pro-16.40-348864.tar.xz
+   73  ls -ltr
+   74  rm amdgpu-pro-16.40-348864.tar.xz
+   75  rm amdgpu-pro-16.40-348864.tar.xz.1 
+   76  exit
+   77  ifconfig -a
+   78  cd bin/
+   79  sh testrun.sh 
+   80  ping google.com
+   81  history
+   82  sh testrun.sh 
+   83  cd /tmp/
+   84  ls -ltr
+   85  tar -Jxvf amdgpu-pro-16.40-348864.tar.xz 
+   86  ls -ltr
+   87  ad amdgpu-pro-16.40-348864
+   88  cd amdgpu-pro-16.40-348864/
+   89  ./amdgpu-pro-install 
+   90  init 0
+   91  sudo init 0
+   92  cd bin/
+   93  ls -ltr
+   94  sh testrun.sh 
+   95  sudo apt-get install mesa-common-dev
+   96  sudo init 0
+   97  glxinfo
+   98  lshw
+   99  lshw -C display
+  100  cd bin/
+  101  ./ethminer --list-devices
+  102  cat testrun.sh 
+  103  vi testrun2.sh 
+  104  ./ethminer --help
+  105  vi testrun2.sh 
+  106  nvidia-smi
+  107  nvidia-smid
+  108  nvidia-smi
+  109  cd bin/
+  110  ./ethminer --help
+  111  ls -ltr
+  112  cat testrun.sh 
+  113  nvidia-smi
+  114  cp testrun.sh testrun-nvidia.sh
+  115  ./ethminer --help
+  116  vi testrun-nvidia.sh 
+  117  nvidia-smi
+  118  cp testrun-nvidia.sh  testrun-all.sh
+  119  vi testrun-all.sh 
+  120  nvidia-smi
+  121  vi testrun-nvidia.sh 
+  122  nvidia-smi
+  123  aticonfig --lsa
+  124  amdconfig --lsa
+  125  aticonfig
+  126  history
+  127  nvidia-smi
+  128  pwd
+  129  ls -ltr
+  130  nvidia-smi
+  131  cd bin/
+  132  ls -ltr
+  133  ps -ef | egrep test
+  134  vi testrun-nvidia.sh 
+  135  export GPU_FORCE_64BIT_PTR=0
+  136  dpkg -l amdgpu-pro
+  137  sudo usermod -a -G video $LOGNAME 
+  138  cd ..
+  139  cd Downloads/
+  140  ls
+  141  ls -ltr /tmp
+  142  cd ..
+  143  ls
+  144  mv NVIDIA-Linux-x86_64-384.90.run Downloads/.
+  145  dpkg -l amdgpu-pro
+  146  cat /etc/default/grub
+  147  cat /etc/default/grub | grep GRUB_CMDLINE_LINUX_DEFAULT
+  148  sudo vi /etc/default/grub
+  149  sudo update-grub
+  150  exit
+  151  echo 'export LLVM_BIN=/opt/amdgpu-pro/bin' | sudo tee /etc/profile.d/amdgpu-pro.sh
+  152  exit
+  153  top
+  154  free
+  155  ps -ef | egrep test
+  156  cd bin/
+  157  sh testrun.sh 
+  158  cat testrun.sh 
+  159  cp testrun.sh testrun2.sh 
+  160  vi testrun2.sh 
+  161  sh testrun2.sh 
+  162  ./ethminer --list-devices
+  163  sh testrun2.sh 
+  164  sh testrun.sh 
+  165  sh testrun2.sh 
+  166  ./ethminer --help
+  167  sh testrun.sh 
+  168  sh testrun2.sh 
+  169  vi testrun
+  170  vi testrun.sh
+  171  vi testrun2.sh 
+  172  sh testrun.sh
+  173  sh testrun-nvidia.sh 
+  174  sh testrun-all.sh 
+  175  sh testrun.sh 
+  176  ps -ef | egrep test
+  177  cd bin/
+  178  ls -ltr
+  179  cp testrun.sh testrun-amd.sh
+  180  cd /tmp/
+  181  ls
+  182  tar -Jxvf amdgpu-pro-17.40-483984.tar.xz 
+  183  cd amdgpu-pro-17.40-483984/
+  184  ./amdgpu-pro-install –y
+  185  ./amdgpu-pro-install 
+  186  sudo reboot 
+  187  cd bin/
+  188  ls -ltr
+  189  sh testrun-nvidia.sh 
+  190  sudo apt install -y rocm-amdgpu-pro
+  191  cd bin/
+  192  ls -ltr
+  193  cp testrun-nvidia.sh testrun-nvidia-cuda.sh 
+  194  vi testrun-nvidia-cuda.sh 
+  195  ./ethminer --help
+  196  ./ethminer --list-devices
+  197  ls -ltr
+  198  cd bin/
+  199  ls
+  200  ls -ltr
+  201  vi testrun-nvidia-cuda.sh 
+  202  cp testrun-nvidia-cuda.sh testrun-nvidia-cuda-0.sh 
+  203  cp testrun-nvidia-cuda.sh testrun-nvidia-cuda-1.sh 
+  204  vi testrun-nvidia-cuda-0.sh 
+  205  vi testrun-nvidia-cuda-1.sh 
+  206  nvidia-smi
+  207  rocmm-smi
+  208  rocm-smi
+  209  wget -qO - http://repo.radeon.com/rocm/apt/debian/rocm.gpg.key | sudo apt-key add -
+  210  sudo sh -c 'echo deb [arch=amd64] http://repo.radeon.com/rocm/apt/debian/ xenial main > /etc/apt/sources.list.d/rocm.list'
+  211  hiory
+  212  history
+  213  dpkg --get-selections | grep rocm
+  214  dpkg -s rocm-amdgpu-pro
+  215  rocm-smi
+  216  path
+  217  echo $path
+  218  ebv
+  219  exit
+  220  ls 
+  221  ls -ltr
+  222  lspci | grep -i AMD
+  223  cd /usr/bin/
+  224  ls -ltr *smi*
+  225  ls *rocm*
+  226  ls -ltr
+  227  ls *amd*
+  228  cd /var/opt/amdgpu-pro-local/
+  229  ls
+  230  ls -ltr
+  231  ls *amd*
+  232  cd /usr/bin/
+  233  ls *ati*
+  234  sensors
+  235  sudo atp install lm-sensors
+  236  sudo apt-get install lm-sensors
+  237  sensor
+  238  sensors
+  239  nvidia-smi
+  240  exit
+  241  ls -ltr
+  242  cd bin/
+  243  ls -lr
+  244  sh testrun-nvidia.sh 
+  245  sh testrun-nvidia-cuda.sh 
+  246  ./ethminer --help
+  247  vi testrun-nvidia-cuda.sh 
+  248  sh testrun-nvidia-cuda.sh 
+  249  sh testrun-nvidia-cuda-0.sh 
+  250  sh testrun-nvidia-cuda.sh 
+  251  cd /tmp/
+  252  ls
+  253  cd ROC-smi-master/
+  254  ls -ltr
+  255  make
+  256  cd
+  257  cd Downloads/
+  258  mv /tmp/ROC-smi-master .
+  259  ls -ltr
+  260  sudo apt-get install git
+  261  ls
+  262  cd ROC-smi-master/
+  263  ls
+  264  make
+  265  ls -ltr
+  266  cd ..
+  267  git clone https://github.com/RadeonOpenCompute/ROC-smi.git
+  268  ls
+  269  ls -ltr
+  270  cd ROC-smi
+  271  ls
+  272  make
+  273  ls -ltr
+  274  cd build/
+  275  ls -ltr
+  276  cd ..
+  277  ./rocm-smi 
+  278  cat Makefile 
+  279  make
+  280  pwd
+  281  ls
+  282  cd DEBIAN/
+  283  ls
+  284  cd ..
+  285  cat README.md 
+  286  ls -ltr
+  287  cat Makefile 
+  288  ls
+  289  make DEBIAN
+  290  make SMIROOT=DEBIAN
+  291  ls -ltr
+  292  cat rocm-smi 
+  293  ls- ltr
+  294  ls -ltr
+  295  ./rocm-smi 
+  296  ./test-rocm-smi.sh 
+  297  ls -ltr
+  298  ca manual 
+  299  cat manual 
+  300  make
+  301  ./rocm-smi 
+  302  history
+  303  history | egrep rocm
+  304  dpkg-query -L rocm-amdgpu-pro
+  305  dpkg --get-selections | grep rocm
+  306  dpkg-query -L rocm-amdgpu-pro-icd
+  307  dpkg-query -L rocm-amdgpu-pro-opencl
+  308  sudo apt-get install rocm-smi
+  309  sudo apt-get install rocm
+  310  sudo apt-get update
+  311  sudo apt-get install rocm
+  312  sudo apt-get install rocm-opencl-dev
+  313  cd /opt/amdgpu-pro/bin
+  314  ls
+  315  ./clinfo 
+  316  sensors
+  317  sudo apt-get install rocm
+  318  sensors
+  319  nvidia-smi 
+  320  nvidia-settings
+  321  ls
+  322  nvidia-settings
+  323  nvidia-settings --help
+  324  nvidia-smi  --help
+  325  nvidia-smi  
+  326  nvidia-smi -pl 85
+  327  sudo nvidia-smi -pl 85
+  328  nvidia-smi  
+  329  nvidia-settings --help
+  330  nvidia-smi  --help
+  331  nvidia-smi  -L
+  332  nvidia-smi  clocks -j
+  333  nvidia-smi  clocks -h
+  334  nvidia-smi  clocks -i
+  335  nvidia-smi  clocks -i0
+  336  nvidia-smi  clocks -i 
+  337  nvidia-smi  clocks -iGPU-4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  338  nvidia-smi  clocks -i GPU-4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  339  nvidia-smi  clocks --id GPU-4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  340  nvidia-smi  clocks --id 4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  341  nvidia-smi  clocks --id GPU-4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  342  nvidia-smi  clocks --iGPU-4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  343  nvidia-smi  clocks -i GPU-4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  344  nvidia-smi  clocks -i 4a80b7b1-cca6-d79f-4454-3b5482e8940e
+  345  nvidia-smi  clocks -i 0
+  346  nvidia-smi  clocks -i:0
+  347  nvidia-smi  --help
+  348  nvidia-smi  -q
+  349  nvidia-smi  -q | egrep MHZ
+  350  nvidia-smi  -q | egrep MHz
+  351  python
+  352  nvidia-smi  -q | egrep MHz|Name" 
+  353  nvidia-smi  -q | egrep "MHz|Name" 
+  354  cd ch
+  355  cd bin/
+  356  sudo nvidia-settings -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=4000'
+  357  nvidia-smi --query-gpu=index,name,uuid,serial --format=csv
+  358  nvidia-smi -q -d SUPPORTED_CLOCKS
+  359  nvidia-smi -ac 1922
+  360  cat /usr/share/doc/nvidia/html/xconfigoptions.htm
+  361  nvidia-settings -a "GPUMemoryTransferRateOffset[3]=4000
+  362  nvidia-settings -a "GPUMemoryTransferRateOffset[3]=4000"
+  363  sudo nvidia-settings -a "GPUMemoryTransferRateOffset[3]=4000"
+  364  nvidia-smi  -q | egrep "MHz|Name" 
+  365  nvidia-settings -a "GPUGraphicsClockOffset[3]=1949"
+  366  nvidia-smi  -q | egrep "MHz|Name" 
+  367  nvidia-smi  
+  368  nvidia-settings -a "GPUGraphicsClockOffset[3]=1949"
+  369  nvidia-settings -a "[GPU:0]GPUGraphicsClockOffset[3]=1949"
+  370  nvidia-settings -
+  371  nvidia-settings -a "[GPU:0]/GPUGraphicsClockOffset[3]=1949"
+  372  nvidia-settings -a "[gpu:0]/GPUGraphicsClockOffset[3]=1949"
+  373  nvidia-smi  -c
+  374  nvidia-smi  -ac
+  375  nvidia-smi  -ac 2000
+  376  nvidia-smi  -ac 2000,800
+  377  nvidia-smi  -acp
+  378  nvidia-smi  -acp 0
+  379  sudo nvidia-smi  -acp 0
+  380  nvidia-smi  -ac 2000,800
+  381  cat /etc/X11/xorg.conf.d/nvidia.conf
+  382  find cat /etc/X11/xorg.conf.d/nvidia.conf
+  383  find  /etc/ name nvidia.conf
+  384  find  /etc/ -name nvidia.conf
+  385  find  /etc/ -name nvidia*
+  386  find  /etc/ -name *nvidia*
+  387  nvidia-settings -c "[gpu:0]/GPUGraphicsClockOffset[3]=1949"
+  388  nvidia-settings --help
+  389  nvidia-settings -q
+  390  nvidia-settings -q gpu0
+  391  nvidia-settings -g
+  392  sudo nvidia-xconfig -a --cool-bits=28
+  393  nvidia-settings -c "[gpu:0]/GPUGraphicsClockOffset[3]=1949"
+  394  sudo reboot
+  395  ls -ltr
+  396  cd bin/
+  397  ls -ltr
+  398  nvidia-smi
+  399  cat testrun-amd.sh 
+  400  cat testrun-nvidia.sh 
+  401  sh testrun-amd.sh 
+  402  ls -ltr
+  403  cd bin/
+  404  ls -ltr
+  405  sh testrun-nvidia-cuda-1.sh 
+  406  cat testrun-nvidia-cuda-1.sh 
+  407  nvivida-
+  408  history
+  409  nvdia-smi
+  410  nvidia-smi
+  411  ps -ef 
+  412  ls -ltr
+  413  nvidia-smi
+  414  cd bin/
+  415  reboot
+  416  ls -ltr
+  417  sh testrun-amd.sh 
+  418  ls -ltr
+  419  nvidia-smi
+  420  nvidia-settings -a "GPUGraphicsClockOffset[3]=1949"
+  421  find cat /etc/X11/xorg.conf.d/nvidia.conf
+  422  cd /etc/X11/
+  423  ls
+  424  grep nvidia *
+  425  grep cool *
+  426  grep cool */*
+  427  grep cool */*/*
+  428  history
+  429  history | sudo
+  430  history | egpre sudo
+  431  history | egrep sudo
+  432  sudo nvidia-xconfig -a --cool-bits=28
+  433  less /etc/X11/xorg.conf
+  434  nvidia-settings -a "GPUGraphicsClockOffset[3]=1949"
+  435  cd /etc/X11/
+  436  ls -ltr
+  437  history | egrep nvidia
+  438  history | egrep pl
+  439  sudo nvidia-smi -pl 85
+  440  nvidia-smi  -ac 2000,800
+  441  sudo nvidia-smi 
+  442  sudo nvidia-smi -pl 50
+  443  sudo nvidia-smi -pl 60
+  444  nvidia-smi 
+  445  ls -ltr
+  446  sensors
+  447  nvidia-smi 
+  448  history
+  449  less /etc/X11/xorg.conf
+  450  nvidia-settings
+  451  nvidia-settings -c :0 -1 qpus
+  452  nvidia-settings -c :0 -1 gpus
+  453  nvidia-settings -c :0 -q gpus
+  454  cd bin/
+  455  ls -ltr
+  456  sh testrun-nvidia-cuda
+  457  sh testrun-nvidia-cuda.sh 
+  458  ls -ltr
+  459  cd bin/
+  460  ls -ltr
+  461  sh testrun.sh 
+  462  sh testrun-amd.sh 
+  463  init 0
+  464  cd bin/
+  465  ls
+  466  sh testrun-nvidia-cuda
+  467  sh testrun-nvidia-cuda.sh 
+  468  cd bin/
+  469  ls -ltr
+  470  sh testrun-amd
+  471  sh testrun-amd.sh 
+  472  ls -ltr
+  473  history | egrep 60
+  474  sydo nvidia-smi -pl 60
+  475  sudo nvidia-smi -pl 60
+  476  sensors
+  477  init 0
+  478  sh testrun-nvidia-cuda.sh 
+  479  cd bin/
+  480  sh testrun-nvidia-cuda.sh 
+  481  sudo nvidia-smi -pl 60
+  482  nvidia-smi 
+  483  sensor
+  484  sensors
+  485  nvidia-smi 
+  486  nvidia-smi -q
+  487  nvidia-smi -q | less
+  488  nvidia-smi 
+  489  nvidia-smi -q | less
+  490  nvidia-smi -q | grep Version
+  491  ls -ltr
+  492  history
+  493  history | X
+  494  history | grep X
+  495  cd /etc/X11
+  496  ls -ltr
+  497  cp xorg.conf.failsafe  xorg.conf
+  498  sudo cp xorg.conf.failsafe  xorg.conf
+  499  reboot
+  500  nvidia-xconfig --enable-all-gpus
+  501  sudo nvidia-xconfig --enable-all-gpus
+  502  cd /etc/X11
+  503  cat xorg.conf
+  504  cat xorg.conf | less
+  505  sudo vi xorg.conf
+  506  reboot
+  507  cd bin/
+  508  ls
+  509  sh testrun-nvidia-cuda
+  510  sh testrun-nvidia-cuda.sh 
+  511  sudo nvidia-smi -pl 60
+  512  nvidia-smi -q
+  513  sensors
+  514  nvidia-settings
+  515  startx
+  516  lspci -vnn | grep -i VGA
+  517  ls -ltr
+  518  cat /var/log/Xorg.0.log
+  519  ls -ltr | less
+  520  cat /var/log/Xorg.0.log | less
+  521  cd /etc/X11
+  522  sudo cp xorg.conf.failsafe  xorg.conf
+  523  init 0
+  524  ls -ltr
+  525  ls- ltr
+  526  ls -ltr
+  527  top
+  528  sensors
+  529  nvidia-smi
+  530  startx
+  531  cd /var/opt/amdgpu-pro-local/
+  532  ls
+  533  cd ..
+  534  ls
+  535  cd ..
+  536  ls -ltr
+  537  history | egrep apt
+  538  history | egrep dpk
+  539  history | egrep dp
+  540  dpkg-query -L xorg
+  541  dpkg -l xorg
+  542  dpkg -l amdgpu-pro
+  543  history | egrep dp
+  544  ls -ltr
+  545  hitory git 
+  546  hitory | egrep git 
+  547  history | egrep git 
+  548  ls
+  549  cd Downloads/
+  550  ls
+  551  git clone https://github.com/OhGodACompany/OhGodATool
+  552  cd OhGodATool/
+  553  make
+  554  ls -ltr
+  555  sensor
+  556  sensors
+  557  sudo ohgodatool -i 0 --core-state 7 --core-vddc-idx 9
+  558  ls
+  559  ls -ltr
+  560  sudo ./ohgodatool -i 0 --core-state 7 --core-vddc-idx 9
+  561  sensors
+  562  sudo ./ohgodatool
+  563  ./ohgodatool -i 0
+  564  sudo ./ohgodatool -i 0
+  565  sudo ./ohgodatool -i 0 --show-mem
+  566  sudo ./ohgodatool -i 0 --show-core
+  567  sudo ./ohgodatool
+  568  sudo ./ohgodatool -i 0 --core-state 0
+  569  sudo ./ohgodatool -i 0 --core-state 1
+  570  sensor
+  571  sensors
+  572  sudo ./ohgodatool -i 0 --core-state 7
+  573  history
+  574  sudo ./ohgodatool -l --core-state 7
+  575  sudo ./ohgodatool -l --core-state 0
+  576  sudo ./ohgodatool -i 0 --core-state -1
+  577  sudo ./ohgodatool -l --core-state 7
+  578  sudo ./ohgodatool -i 0 --core-state -7
+  579  sudo ./ohgodatool -i 0 --show-mem
+  580  sudo ./ohgodatool -i 0 --show-core
+  581  sudo ./ohgodatool 
+  582  sudo ./ohgodatool -i 0 --show-voltage
+  583  sudo ./ohgodatool 
+  584  sudo ./ohgodatool -i 0 --show-mem
+  585  sudo ./ohgodatool -i 0 --mem-state 0
+  586  sensors
+  587  sudo ./ohgodatool -i 0 --mem-state 1
+  588  sudo ./ohgodatool -i 0 --core-state 7 --core-vddc-idx 9
+  589  sudo ./ohgodatool -o
+  590  sudo ./ohgodatool --show-core
+  591  sudo ./ohgodatool -i 0 --show-core
+  592  sensors
+  593  sudo ./ohgodatool -i 0 --show-mem
+  594  sudo ./ohgodatool -i 0 --mem-state 1 --mem-vddc-idx 9
+  595  sensors
+  596  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 9
+  597  sudo ./ohgodatool -i 0 --show-mem
+  598  sudo ./ohgodatool -i 0 
+  599  sudo ./ohgodatool 
+  600  sensor
+  601  sensors
+  602  sudo ./ohgodatool -i 0 --show-mem
+  603  sudo ./ohgodatool -i 0 --mem-state 3 --mem-vddc-idx 9
+  604  sudo ./ohgodatool -i 0 --mem-state 1 --mem-vddc-idx 9
+  605  sensors
+  606  sudo ./ohgodatool -i 0 --mem-state 1 --mem-vddc-idx 8
+  607  sensors
+  608  sudo ./ohgodatool -i 0 --show-mem
+  609  sudo ./ohgodatool
+  610  sensors
+  611  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 8
+  612  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 10
+  613  sensors
+  614  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 11
+  615  sensors
+  616  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 9
+  617  sudo ./ohgodatool 
+  618  sudo ./ohgodatool -i 0 --show-mem 1
+  619  sudo ./ohgodatool -i 0 --show-mem 
+  620  sudo ./ohgodatool 
+  621  sudo ./ohgodatool -i 0 --mem-clock 2000
+  622  sensors
+  623  /opt/amdgpu-pro/bin/clinfo 
+  624  cd bin/
+  625  ls -ltr
+  626  sh testrun-amd.sh 
+  627  cd bin/
+  628  sh testrun-nvidia-cuda.sh 
+  629  init 0
+  630  sudo nvidia-smi -pl -60
+  631  sudo nvidia-smi -lp -60
+  632  sudo nvidia-smi --help
+  633  history | egrep 60
+  634  sudo nvidia-smi -pl 60
+  635  cd bin/
+  636  ls -lt
+  637  cat testrun-nvidia-cuda.sh 
+  638  ./ethminer --version
+  639  sensors
+  640  ./ethminer --version
+  641  sensors
+  642  history | egrep amd
+  643  ls /opt/amdgpu-pro/bin/
+  644  /opt/amdgpu-pro/bin/clinfo
+  645  /opt/amdgpu-pro/bin/clinfo | less
+  646  sensor
+  647  sensors
+  648  nvidia-smi
+  649  ls -ltr
+  650  sudo nvidia-smi -lp 60
+  651  sudo nvidia-smi -pl 60
+  652  sudo nvidia-smi 
+  653  sensor
+  654  sensors
+  655  sudo ./ohgodatool -i 0 --core-state 7 --core-vddc-idx 9
+  656  sensors
+  657  sudo nvidia-smi 
+  658  nvidia-smi
+  659  sensors
+  660  ks
+  661  ls
+  662  ls -ltr
+  663  exit
+  664  cd bin/
+  665  ls
+  666  sh testrun-nvidia
+  667  sh testrun-nvidia.sh 
+  668  cd Downloads/OhGodATool/
+  669  sudo ./ohgodatool -i 0 --core-state 7 --core-vddc-idx 9
+  670  sensors
+  671  init 0
+  672  hisotry
+  673  cd Downloads/
+  674  ls -ltr
+  675  cd OhGodATool/
+  676  ls -ltr
+  677  history | egrep ohgoda
+  678  sudo ./ohgodatool -i 0 
+  679  sudo ./ohgodatool
+  680  sudo ./ohgodatool -i 0 --show-core
+  681  history | egrep ohgoda
+  682  sudo ./ohgodatool -i 0 --core-state3 --core-vddc-idx 3
+  683  sudo ./ohgodatool -i 0 --core-state 3 --core-vddc-idx 3
+  684  sesnors
+  685  sensors
+  686  sudo ./ohgodatool
+  687  sudo ./ohgodatool -i 0 --show-meme
+  688  sudo ./ohgodatool -i 0 --show-mem
+  689  sudo ./ohgodatool -i 0 --mem-state 3--mem-clock 1870
+  690  sudo ./ohgodatool -i 0 --mem-state 3 --mem-clock 3870
+  691  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1870
+  692  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 2
+  693  sensor
+  694  sensors
+  695  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 10
+  696  sudo ./ohgodatool -i 0 --mem-state 2 --mem-vddc-idx 9
+  697  sensor
+  698  sensors
+  699  sudo ./ohgodatool
+  700  sudo ./ohgodatool --show-core
+  701  sudo ./ohgodatool -i 0 --show-core
+  702  sudo ./ohgodatool
+  703  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1150
+  704  sudo ./ohgodatool -i 0 --show-temp
+  705  sensors
+  706  sudo ./ohgodatool -i 0 --show-voltage
+  707  sensor
+  708  sensors
+  709  /opt/amdgpu-pro/bin/clinfo | less
+  710  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1950
+  711  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2050
+  712  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2100
+  713  history
+  714  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1050
+  715  sudo ./ohgodatool -i 0 --show-voltage
+  716  sudo ./ohgodatool
+  717  sudo ./ohgodatool -i 0 --show-voltage
+  718  sudo ./ohgodatool
+  719  sudo ./ohgodatool -i 0 --volt-state 11 --vddci 950
+  720  sensors
+  721  exit
+  722  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2150
+  723  cd Downloads/
+  724  ls
+  725  cd OhGodATool/
+  726  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2150
+  727  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1100
+  728  sensors
+  729  history | egrep ohgod
+  730  ./ohgodatool -i 0 --volt-state 11 --vddci 1000
+  731  sudo ./ohgodatool -i 0 --volt-state 11 --vddci 1000
+  732  ./ohgodatool -i 0 --volt-state 11 --vddci 950
+  733  sudo ./ohgodatool -i 0 --volt-state 11 --vddci 950
+  734  history | egrep ohgod
+  735  sudo ./ohgodatool 
+  736  ./ohgodatool -i 0 --show-fanspeed
+  737  sudo ./ohgodatool -i 0 --show-fanspeed
+  738  sudo ./ohgodatool -i 0 --show-voltage
+  739  sudo ./ohgodatool -i 0 --show-core
+  740  24+34
+  741  python 24+34
+  742  python 
+  743  nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=1300'
+  744  nvidia-smi
+  745  nvidia-smi --help
+  746  nvidia-smi -ac 2000,800
+  747  nvidia-smi --query-supported-clocks=
+  748  nvidia-smi --query-supported-clocks
+  749  nvidia-smi --query-supported-clocks=0
+  750  nvidia-smi --query-supported-clocks=1
+  751  nvidia-smi --query-supported-clocks 0
+  752  nvidia-smi --help-query-supported-cl
+  753  nvidia-smi --query-supported-clocks=mem
+  754  nvidia-smi --query-supported-clocks="mem"
+  755  nvidia-smi -c 1
+  756  sudo nvidia-smi -c 1
+  757  nvidia-smi 
+  758  nvidia-smi --help
+  759  nvidia-smi --help | egrep pm
+  760  sudo service lightdm stop.
+  761  sudo service lightdm stop
+  762  sudo service lightdm start
+  763  startx
+  764  sudo ./ohgodatool -i 0 --show-core
+  765  sudo ./ohgodatool -i 0 --show-voltage
+  766  history | egrep show
+  767  sudo ./ohgodatool -i 0 --show-fanspeed
+  768  history | egrep ohgod
+  769  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1150
+  770  sensors
+  771  sudo ./ohgodatool -i 0 --show-core
+  772  sudo ./ohgodatool -i 0 --core-state 4 --core-clock 1174
+  773  sensors
+  774  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1050
+  775  history
+  776  history | egrep ohgod
+  777  sudo ./ohgodatool -i 0 --volt-state 11 --vddci 1000
+  778  sensors
+  779  history
+  780  history | egrep smi
+  781  sudo nvidia-smi -pl 60
+  782  history | egrep ohgod
+  783  python
+  784  exit
+  785  sensors
+  786  python 
+  787  ls- ltr
+  788  ls -ltr
+  789  history | egrep ohgod
+  790  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1750
+  791  cd Downloads/OhGodATool/
+  792  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1750
+  793  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1050
+  794  ./ohgodatool -i 0 --mem-state 2 --mem-clock 1750
+  795  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1750
+  796  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1800
+  797  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1850
+  798  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1900
+  799  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 1950
+  800  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2000
+  801  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2050
+  802  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2100
+  803  sudo ./ohgodatool -i 0 --mem-state 2 --mem-clock 2150
+  804  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1100
+  805  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1050
+  806  history |grep core
+  807  sudo ./ohgodatool -i 0 --core-state 3 --core-clock 1140
+  808  history |grep ohgod
+  809  cd bin/
+  810  ls -ltr
+  811  cp testrun-amd.sh testrun-amd-etc.sh
+  812  vi testrun-amd-etc.sh 
+  813  cat testrun-all.sh
+  814  vi testrun-amd-etc.sh 
+  815  cat testrun-amd-etc.sh
+  816  cd ..
+  817  cd Downloads/
+  818  git clone https://github.com/JamesSmith2/EthControlLinux/releases/tag/1.3
+  819  cd 1.3
+  820  ls
+  821  git clone https://github.com/JamesSmith2/EthControlLinux
+  822  wget https://github.com/JamesSmith2/EthControlLinux/releases/download/1.3/EthControl.gz && gunzip EthControl.gz && 
+  823  wget https://github.com/JamesSmith2/EthControlLinux/releases/download/1.3/EthControl.gz 
+  824  gunzip EthControl.gz 
+  825  ls -ltr
+  826  cd EthControlLinux/
+  827  ls
+  828  cat README.md 
+  829  cd ..
+  830  ls -ltr
+  831  rm -r EthControlLinux
+  832  rm -rf EthControlLinux
+  833  chmod +x EthControl 
+  834  ./EthControl 
+  835  ./EthControl --help
+  836  ./EthControl -accessToken cca2189bc091d4452faad82c784dea22
+  837  ./EthControl -accessToken cca2189bc091d4452faad82c784dea22 -rigName aungzay_rig2
+  838  ./EthControl -accessToken cca2189bc091d4452faad82c784dea22
+  839  ./EthControl -accessToken cca2189bc091d4452faad82c784dea22 -rigName aungzay_rig2
+  840  exit
+  841  cd bin/
+  842  ls
+  843  cat testrun-nvidia.sh
+  844  exit
+  845  cd bin/
+  846  ls -ltr
+  847  cp testrun-nvidia-cuda.sh testrun-nvidia-cuda-etc.sh
+  848  vi testrun-nvidia-cuda-etc.sh
+  849  exit
+  850  cd bin/
+  851  ls -ltr
+  852  cat testrun-amd-etc.sh 
+  853  exit
+  854  ls -ltr
+  855  cd Do
+  856  cd Downloads/
+  857  ls -ltr
+  858  history | less
+  859  history  > az_mining_history.txt
